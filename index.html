@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="currency.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="head">
+
+            <h1>Currency Converter</h1>
+
+            <div class="amnt">
+
+                <p class="ent-amnt text">Enter Amount </p>
+                <input type="number" class="amount" placeholder="e.g 100" />
+
+            </div>
+                
+        </div>
+
+        <div class="inner-cont">
+
+            <div class="dropdown">
+
+                <p class="text">
+                    From
+                </p>
+                
+                <div class="drop-from">
+
+                    <img src="https://flagsapi.com/US/flat/64.png">
+
+                    <select name="from">
+                        <!-- <option value="PK">Rupee</option>
+                        <option value="US">Dollar</option>
+                        <option value="EU">Euro</option> -->
+                    </select>
+
+                </div>
+                
+            </div>
+            
+            <div class="exchng">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            
+            <div class="dropdown">
+                
+                <p class="text">
+                    To
+                </p>
+                
+                <div class="drop-to">
+
+                    <img src="https://flagsapi.com/PK/flat/64.png">
+                    
+                    <select name="to">
+                        <!-- <option value="US">Dollar</option>
+                        <option value="PK">Rupee</option>
+                        <option value="EU">Euro</option> -->
+                    </select>
+                    
+                </div>
+
+        </div>
+
+        <div class="result">
+            <div class="resu"></div>
+        </div>
+        <button class="exchng-rate">Get Exchange Rate</button>
+
+    </div>
+    
+</body>
+<script src="codes.js"></script>
+<script src="currency.js"></script>
+</html>
